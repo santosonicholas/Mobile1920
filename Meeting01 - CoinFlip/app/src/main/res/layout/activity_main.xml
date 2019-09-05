@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR COIN IS HEAD"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#C700FF"
+        android:id="@+id/result_coin"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/iv_coin"
+        android:layout_width="210dp"
+        android:layout_height="203dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CLICK BUTTON AT BELOW TO FLIP THE COIN !!"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/but_flip"
+        android:layout_width="179dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center_horizontal"
+        android:text="FLIP"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/linkGitHub"
+        android:layout_width="475dp"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:text="This App Made By Nicholas, https://github.com/santosonicholas"/>
+
+
+</LinearLayout>
