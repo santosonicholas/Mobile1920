@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.github.santosonicholas.exploration.MainMenu"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenu_to_howToPlay"
+            app:destination="@id/howToPlay" />
+        <action
+            android:id="@+id/action_mainMenu_to_game"
+            app:destination="@id/game" />
+    </fragment>
+    <fragment
+        android:id="@+id/howToPlay"
+        android:name="com.github.santosonicholas.exploration.HowToPlay"
+        android:label="HOW TO PLAY"
+        tools:layout="@layout/fragment_how_to_play" />
+    <fragment
+        android:id="@+id/game"
+        android:name="com.github.santosonicholas.exploration.Game"
+        android:label="Where is the Key Game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.github.santosonicholas.exploration.Finish"
+        android:label="All Unlocked Finish"
+        tools:layout="@layout/fragment_finish">
+        <action
+            android:id="@+id/action_finish_to_finishDisplay"
+            app:destination="@id/finishDisplay" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishDisplay"
+        android:name="com.github.santosonicholas.exploration.FinishDisplay"
+        android:label="Game Ending"
+        tools:layout="@layout/fragment_finish_display" />
+</navigation>
